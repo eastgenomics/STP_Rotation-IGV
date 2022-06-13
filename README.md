@@ -12,7 +12,7 @@ Visual inspection of variant calls usually takes place during either:
 
 In the former case, it's important to be able to determine if a called variant is real or not, as this will influence whether additional work is performed to confirm the presence of that variant, and/or whether the variant is reported within the patient result.
 
-In the latter case, visual inspection can provide clues as to the reasons for non-concordance which can aid with troubleshooting and inform the development of improved methods.
+In the latter case, visual inspection can provide clues as to the reasons for non-concordance which can aid with troubleshooting and inform the development of improved processes.
 
 In this session we will inspect some regions of the genome where there are possible variants to determine whether these are real events or artifacts. These will include single nucleotide variants (SNVs), small insertions and deletions (indels) and larger structural rearrangements.
 
@@ -47,7 +47,7 @@ HG002 is a sample which as been sequenced by multiple technologies to generate a
 
 The data we will be viewing is stored in DNAnexus at https://platform.dnanexus.com/panx/projects/GBVYpp04KXQXgJXK9YFJVXq3/data/
 
-You will also be able to load other data from patient samples and inspect variants within these, but for these you will not have the benefit of a truth set, so will need to interpret the validity of the variant call using only visual inspection.
+You will also be able to load other data from patient samples and inspect putative variants calls within these, but for these you will not have the benefit of a truth set, so will need to interpret the validity of the variant call using only visual inspection.
 
 
 ## How to use IGV
@@ -62,20 +62,66 @@ IGV can visualise many different types of genomic data. We will be using it to d
 
 The data we are using is stored in the cloud. Rather than download the data, we will load it into IGV using a URL, which will stream the necessary data to IGV as you view it. 
 
-URLs can be generated as follows:
+
+First we will prepare IGV
+
+ 1. Open https://igv.org/app/
+ 2. Select Genome > GRCh38
+ 3. Keep this tab open - we will come back to it in a moment
+
+Next we will prepare links to the data we wish to view
+
+ 1. In another tab, log in to [DNAnexus](https://platform.dnanexus.com/login)
+ 2. Navigate to https://platform.dnanexus.com/panx/projects/GBVYpp04KXQXgJXK9YFJVXq3/data/
+ 3. Navigate to `/data/HG002`
+ 4. Select the files you wish to view by ticking the checkbox
+    4a. If viewing a vcf or bam file, you will also need to select the associated index file at the same time
+        i.e.`bam + bai`
+            `vcf.gz + vcf.gz.tbi`
+ 5. Click `Download` in the top right corner
+ 6. Get the URL from the popup window, by either
+   6a. Clicking the `Get URL` button against each file
+   6b. Clicking the `Bulk URLs` tab at the top
+ 
+ Now we have IGV and URLs prepared, we can load the data into IGV:
+ 
+  1. In your IGV browser tab, click `Tracks > URL`
+  2. Paste the URL for a bam, vcf, or bed file into `Track URL`
+  3. If loading a bam or vcf file, then also paste the associated index file (bai or vcf.gz.tbi) URL into `Index URL`
+  4. Click OK
+
+At this stage you have loaded data into IGV and should be able to begin exploring the data. For this session we will want to load the bam + bai, and the vcf.gz + vcf.gz.tbi before continuing. This will allow us to view the sequencing data (from the bam file) and the variant calls (from the vcf file) together.
 
 
+## IGV Navigation Basics
 
-
-
-We will load data into IGV-Web using 
-
-
-## Basics
 What are you seeing
+
+
+
 How to navigate
 
 
 
 ## Variant inspection/interpretation
 Split these?
+
+
+# SNVs
+Het
+Hom 1/1 1/2
+X + Y
+
+Good and bad examples for each
+
+# Indels
+In
+del
+Indel
+
+Good and bad examples for each
+
+# CNV
+Breakpoints
+
+Soft clipping
