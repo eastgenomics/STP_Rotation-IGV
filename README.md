@@ -95,13 +95,36 @@ At this stage you have loaded data into IGV and should be able to begin explorin
 
 ## IGV Navigation Basics
 
-What are you seeing
+### Moving around
 
+There are many ways to navigate to a region you wish to visualise.
 
+ - coordinates
+   - range
+     - `chr7:117,559,332-117,559,529`
+     - `7:117,559,332-117,559,529` 
+     - `7:117559332-117559529`
+   - position
+     - `chr7:117,559,479`
+ - gene symbol
+   - `CFTR`
+ - zoom in/out
+ - draw region in ruler track
+ - click and drag in data tracks
+ 
+ ### Tracks
+  - ideogram
+  - genome ruler
+  - genome
+  - depth of coverage
+  - reads
+  - variants
+  - refseq genes
 
-How to navigate
-
-
+## Useful options
+Soft clipping
+Colour by read strand
+View as pairs
 
 ## Variant inspection/interpretation
 Split these?
