@@ -150,6 +150,8 @@ When reads only partialy align to the reference genome the unaligned sections of
 
 Access via the bam track cog menu. Select `Show soft clips`
 
+chr7:117,479,629-117,480,441
+
 #### Colour by read strand
 Colours reads according to which strand of the DNA was sequenced, and the direction of sequencing
 pink = sequenced from left to right on the forward strand
