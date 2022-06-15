@@ -95,46 +95,74 @@ At this stage you have loaded data into IGV and should be able to begin explorin
 
 ### Moving around
 
-There are many ways to navigate to a region you wish to visualise.
-
- - coordinates
-   - range
-     - `chr7:117,559,332-117,559,529`
-     - `7:117,559,332-117,559,529` 
-     - `7:117559332-117559529`
-   - position
-     - `chr7:117,559,479`
+There are many ways to navigate to a region you wish to visualise. You will usually want to search for the region you wish to view using the search box:  
+ ![Search](images/coordinates.png)  
+ 
+ This will accept any of the following:
+ - genomic coordinates range
+   - `chr7:117,559,332-117,559,529`
+   - `7:117,559,332-117,559,529` 
+   - `7:117559332-117559529`
+ - genomic coordinates single position
+   - `chr7:117,559,479`
  - gene symbol
    - `CFTR`
- - zoom in/out
- - draw region in ruler track
- - click and drag in data tracks
+ 
+ (Note that if the region selected contains too much data then you will need to zoom in before the reads are displayed - see below)
+ 
+ You can also adjust the region being displayed in various ways
+ - Zoom in/out  
+ Zoom using `+` and `-` and the slider in the top right  
+ ![Zoom](images/zoom.png)  
+ - click and drag left or right within the data (bam or vcf) tracks to scroll
+ - click and drag to draw a box in the genome ruler track to select a region to view  
+  ![Draw region](images/draw_region.png)  
+ 
  
  ### Tracks
-  - ideogram
-  - genome ruler
-  - genome
-  - depth of coverage
-  - reads
-  - variants
-  - refseq genes
+IGV displays data in tracks  
+![Tracks](images/tracks.png)  
+
+
+The tracks we have loaded for this session are (from top to bottom)
+  1. Ideogram  
+  A map of the currently viewed chromosome
+  2. Genome ruler  
+  Coordinates in the currently viewed chromosome
+  3. Genome sequence  
+  Contains the individual bases in the reference genome. Only displayed when zoomed in
+  4. Depth of coverage  
+  Shows the depth of reads mapped to each position.
+  Colours indicate the presence and distribution of variation in the reads at this position
+  5. Reads  
+  The individual sequencing reads are displayed at the position they are aligned to within the reference genome
+  6. Variant calls  
+  Putative variant calls extracted from the reads data
+  7. Refseq genes  
+  Shows features (exon/intron/UTR) of the genes within the genome
+  ![Feature](images/feature.png)  
 
 ## Useful options
 IGV has many many options which are useful for specific purposes, but a few of the most useful for this session are described below:
 
-### Soft clipping
-When reads only partialy align to the reference genome the unaligned sections of the reads are hidden from view by default. These hidden parts sometimes contain very useful information, so it's useful to display them.
+#### Soft clipping
+When reads only partialy align to the reference genome the unaligned sections of the reads are hidden from view by default. These hidden parts sometimes contain very useful information, so it's useful to display them
 
-### Colour by read strand
+Access via the bam track cog menu. Select `Show soft clips`
+
+#### Colour by read strand
 Colours reads according to which strand of the DNA was sequenced, and the direction of sequencing
 pink = sequenced from left to right on the forward strand
 blue = sequenced from right to left on the reverse strand
 This can be useful for discriminating between artifacts and real variant calls.
 
-### View as pairs
+Access via the bam track cog menu. Select `Color by:` > `Read strand`
+
+#### View as pairs
 Display read pairs linked together with a line joining the inner ends
 Presentation of the data is less compact, but extra information can be obtained from a linked pair of reads
 
+Access via the bam track cog menu. Select `View as pairs`
 
 ## Variant inspection
 In this section, we will become familiar with the appearance of the different types of variation within IGV, then learn to distinguish true positive from false positive variant calls.
