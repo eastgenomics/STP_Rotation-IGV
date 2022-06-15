@@ -52,8 +52,6 @@ You will also be able to load other data from patient samples and inspect putati
 
 ## How to use IGV
 
-
-## Data
 IGV can visualise many different types of genomic data. We will be using it to display variant calls and the sequencing data which was used to generate those variant calls.
 
 **VCF** Variant calls are stored in VCF files. VCF is the standard file format for describing variant calls\
@@ -83,11 +81,11 @@ Next we will prepare links to the data we wish to view
    6a. Clicking the `Get URL` button against each file
    6b. Clicking the `Bulk URLs` tab at the top
  
- Now we have IGV and URLs prepared, we can load the data into IGV:
+ Now we have both IGV and data URLs prepared, we can load the data into IGV:
  
   1. In your IGV browser tab, click `Tracks > URL`
   2. Paste the URL for a bam, vcf, or bed file into `Track URL`
-  3. If loading a bam or vcf file, then also paste the associated index file (bai or vcf.gz.tbi) URL into `Index URL`
+  3. If loading a bam or vcf file, then also paste the associated index file (.bai or vcf.gz.tbi) URL into `Index URL`
   4. Click OK
 
 At this stage you have loaded data into IGV and should be able to begin exploring the data. For this session we will want to load the bam + bai, and the vcf.gz + vcf.gz.tbi before continuing. This will allow us to view the sequencing data (from the bam file) and the variant calls (from the vcf file) together.
@@ -122,19 +120,42 @@ There are many ways to navigate to a region you wish to visualise.
   - refseq genes
 
 ## Useful options
-Soft clipping
-Colour by read strand
-View as pairs
+IGV has many many options which are useful for specific purposes, but a few of the most useful for this session are described below:
 
-## Variant inspection/interpretation
-Split these?
+### Soft clipping
+When reads only partialy align to the reference genome the unaligned sections of the reads are hidden from view by default. These hidden parts sometimes contain very useful information, so it's useful to display them.
+
+### Colour by read strand
+Colours reads according to which strand of the DNA was sequenced, and the direction of sequencing
+pink = sequenced from left to right on the forward strand
+blue = sequenced from right to left on the reverse strand
+This can be useful for discriminating between artifacts and real variant calls.
+
+### View as pairs
+Display read pairs linked together with a line joining the inner ends
+Presentation of the data is less compact, but extra information can be obtained from a linked pair of reads
 
 
-# SNVs
-Het
-Hom 1/1 1/2
-X + Y
+## Variant inspection
+In this section, we will become familiar with the appearance of the different types of variation within IGV, then learn to distinguish true positive from false positive variant calls.
+ 
+ ### SNVs
+ 
+  - Hets
+  - 
+  - Homs
+    - 1/1
+    - 1/2 
+    - X + Y
+ - Indels
+ -  In
+ -  Del
 
+ - CNVs
+   - breakpoints
+
+
+## Variant  interpretation
 Good and bad examples for each
 
 # Indels
