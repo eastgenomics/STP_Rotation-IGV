@@ -170,14 +170,18 @@ Access via the bam track cog menu. Select `View as pairs`
 In this section, we will become familiar with the appearance of the different types of variation within IGV, then learn to distinguish true positive from false positive variant calls.
  
  ### SNVs
- 
-  - Hets
-  - 
-  - Homs
+  - Hom
+    - 13:32337751
+    - 13:32340869
+    - X + Y
+  - Het
+    - 13:32340099
+    - 
+  - Hom
     - 1/1
     - 1/2 
     - X + Y
- - Indels
+ - Indel
  -  In
  -  Del
 
