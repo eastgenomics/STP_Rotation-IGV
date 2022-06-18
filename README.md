@@ -192,13 +192,16 @@ In this section, we will become familiar with the appearance of the different ty
     - `Y:56878338` (?)
 
   - Indel
-    -  Deletion
+    -  Deletion  
       -  `9:130265925` (TP)
       -  `7:150474511` (TP)
-    -  Insertion
-      -  ``
-      -  ``
-      -  ``
+      -  `16:5239850` (FP)
+      -   `241317535` (FP)
+    -  Insertion  
+      -  `2:85754659` (TP)
+      -  `2:119437075` (TP)
+      -  `3:141971552` (FP)
+      
     -  Repeats
 
  - CNVs
