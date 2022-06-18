@@ -88,6 +88,8 @@ Next we will prepare links to the data we wish to view
   3. If loading a bam or vcf file, then also paste the associated index file (.bai or vcf.gz.tbi) URL into `Index URL`
   4. Click OK
 
+Note: URLs for files in DNAnexus will only be valid for 24hours, so if you want to load the same files into IGV at a later date you'll need to create new URLs and load these into IGV.
+
 At this stage you have loaded data into IGV and should be able to begin exploring the data. For this session we will want to load the bam + bai, and the vcf.gz + vcf.gz.tbi before continuing. This will allow us to view the sequencing data (from the bam file) and the variant calls (from the vcf file) together.
 
 
@@ -172,24 +174,42 @@ Access via the bam track cog menu. Select `View as pairs`
 ## Variant inspection
 In this section, we will become familiar with the appearance of the different types of variation within IGV, then learn to distinguish true positive from false positive variant calls.
  
- ### SNVs
+ ### Single nucleotide variants (SNVs)
   - Hom
-    - `13:32337751`
-    - `13:32340869`
-    - `X:41134685`
-    - `Y:7,064,065`
+    - `13:32337751` (TP)
+    - `13:32340869` (TP)
+    - `X:41134685` (TP)
+    - `Y:7064065` (TP)
+    - `7:143720229` (FP)
+    - `19:35372239` (FP, wrong GT)
+
   - Het
-    - `13:32340099`
-    - `17:43099914`
-    - 
-    - Can we find a het on X/Y?
+    - `13:32340099`  (TP)
+    - `17:43099914`  (TP)
+    - `1:6545786` (TP, 1/2)
+    - `19:54633116` (FP)
+    - `22:15820262` (FP)
+    - `Y:56878338` (?)
+
   - Indel
-    -  In
-    -  Del
+    -  Deletion
+      -  `9:130265925` (TP)
+      -  `7:150474511` (TP)
+    -  Insertion
+      -  ``
+      -  ``
+      -  ``
     -  Repeats
 
  - CNVs
    - breakpoints
+
+## Important considerations
+Allele depth
+Strand bias
+Position bias
+Multimapped reads
+Lots of variation
 
 
 ## Variant  interpretation
