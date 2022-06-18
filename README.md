@@ -192,38 +192,22 @@ In this section, we will become familiar with the appearance of the different ty
     - `Y:56878338` (?)
 
   - Indel
-    -  Deletion  
-      -  `9:130265925` (TP)
-      -  `7:150474511` (TP)
-      -  `16:5239850` (FP)
-      -   `241317535` (FP)
-    -  Insertion  
-      -  `2:85754659` (TP)
-      -  `2:119437075` (TP)
-      -  `3:141971552` (FP)
-      
-    -  Repeats
-
- - CNVs
-   - breakpoints
+      -  Deletion
+          -  `9:130265925` (TP)
+          -  `7:150474511` (TP)
+          -  `16:5239850` (FP)
+          -   `241317535` (FP)
+      -  Insertion  
+          -  `2:85754659` (TP)
+          -  `2:119437075` (TP)
+          -  `3:141971552` (FP)
 
 ## Important considerations
-Allele depth
-Strand bias
-Position bias
-Multimapped reads
-Lots of variation
-
-
-## Variant  interpretation
-Good and bad examples for each
-
-# Indels
-In
-del
-Indel
-
-Good and bad examples for each
+ - Allele depth
+ - Strand bias
+ - Position bias
+ - Multimapped reads
+ - Lots of variation in a small region
 
 # CNV
 Breakpoints
