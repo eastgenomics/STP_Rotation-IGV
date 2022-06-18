@@ -142,6 +142,9 @@ The tracks we have loaded for this session are (from top to bottom)
   Shows features (exon/intron/UTR) of the genes within the genome
   ![Feature](images/feature.png)  
 
+#### Reads track description needed?
+
+
 ## Useful options
 IGV has many many options which are useful for specific purposes, but a few of the most useful for this session are described below:
 
@@ -171,19 +174,19 @@ In this section, we will become familiar with the appearance of the different ty
  
  ### SNVs
   - Hom
-    - 13:32337751
-    - 13:32340869
-    - X + Y
+    - `13:32337751`
+    - `13:32340869`
+    - `X:41134685`
+    - `Y:7,064,065`
   - Het
-    - 13:32340099
+    - `13:32340099`
+    - `17:43099914`
     - 
-  - Hom
-    - 1/1
-    - 1/2 
-    - X + Y
- - Indel
- -  In
- -  Del
+    - Can we find a het on X/Y?
+  - Indel
+    -  In
+    -  Del
+    -  Repeats
 
  - CNVs
    - breakpoints
