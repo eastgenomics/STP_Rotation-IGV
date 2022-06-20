@@ -2,7 +2,7 @@
 
 ## Context
 
-In this session we will be looking at how IGV can be used for visualizing mutations in NGS data. In this scenario exome sequencing has been performed on a DNA sample, sequence reads have been aligned to the reference genome (GRCh37) and a variant caller has been run.
+In this session we will be looking at how IGV can be used for visualizing mutations in NGS data. In this scenario exome sequencing has been performed on a DNA sample, sequence reads have been aligned to the reference genome (GRCh38) and a variant caller has been run.
 
 Variant calling algorithms are not perfect at distinguishing real variants from artifacts in the data. When we process NGS data to generate variant calls this also generates various metrics for each of those calls which can be useful in determining wheter a variant call is real. However, it is often not possible to interpret these metrics with certainty, and in these cases visual inspection and interpretatin of the read data underlying the variant calls can be the most useful approach to adjust our confidence in the accuracy of the variant calls, and determine if a variant call is real or artifact. Furthermore, complex variation may not be accurately described by the variant caller (or may not be called at all), and visual inspection of the data can be useful to characterise these complex events.
 
