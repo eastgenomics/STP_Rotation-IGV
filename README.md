@@ -189,7 +189,7 @@ In this section, we will become familiar with the appearance of the different ty
           -  `9:130265925` (TP)
           -  `7:150474511` (TP)
           -  `16:5239850` (FP)
-          -   `241317535` (FP)
+          -   `2:241317535` (FP)
       -  Insertion  
           -  `2:85754659` (TP)
           -  `2:119437075` (TP)
@@ -205,13 +205,14 @@ In this section, we will become familiar with the appearance of the different ty
 
 ## Blind interpretation
 
-5 more variants in HG002 are listed below. Determine if each of the variant calls is accurate by inspecting and interpreting the data in IGV. 
+6 more variants in HG002 are listed below. Determine if each of the variant calls is accurate by inspecting and interpreting the data in IGV. 
 
- 1.
- 2.
- 3.
- 4.
- 5. 
+ 1. `12:75506808`
+ 2. `2:130657402`
+ 3. `19:54632113`
+ 4. `16:67195890`
+ 5. `16:805517`
+ 6. `2:241317535`
 
 For each variant you should record your decision and the reasoning behind that decision, and submit this as evidence for: 
 Competency 4 - Identify variation within genetic sequence data captured from various sources
