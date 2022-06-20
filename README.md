@@ -19,6 +19,8 @@ In this session we will inspect some regions of the genome where there are possi
 
 ## What is IGV
 
+We'll be using IGV to visualise variants and their supporting data.
+
 The Integrative Genomics Viewer (IGV) is a high-performance, easy-to-use, interactive tool for the visual exploration of genomic data. It supports flexible integration of all the common types of genomic data and metadata, investigator-generated or publicly available, loaded from local or cloud sources.
 
 https://software.broadinstitute.org/software/igv/
@@ -136,9 +138,6 @@ The tracks we have loaded for this session are (from top to bottom)
   7. Refseq genes  
   Shows features (exon/intron/UTR) of the genes within the genome
   ![Feature](images/feature.png)  
-
-#### Reads track description needed?
-
 
 ## Useful options
 IGV has many many options which are useful for specific purposes, but a few of the most useful for this session are described below:
